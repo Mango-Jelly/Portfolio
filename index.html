@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#fun">About</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="glass-card hero-card">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Jun</span></h1>
+                <h2 class="hero-description">a sophomore studying Applied Math & Computer Science @ Brown University </h2>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/xiaojun-ge" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#contact" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <button id="snow-toggle" class="snow-toggle" aria-label="Toggle snow effect">
+                    <i class="fas fa-snowflake"></i>
+                </button>
+            </div>
+            
+            <!-- Currently Taking Section -->
+            <div class="glass-card currently-taking">
+                <p class="taking-label">Currently Learning (Fall 2025):</p>
+                <div class="rotating-classes">
+                    <span class="class-item active">CSCI 1515: Applied Cryptography</span>
+                    <span class="class-item">CSCI 1680: Computer Networks</span>
+                    <span class="class-item">APMA 1160: Numerical Optimization</span>
+                    <span class="class-item">APMA 1070: Quantitative Models of Bio Systems</span>
+                    <span class="class-item">CSCI 1952D: Intelligent Robotics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun Section -->
+    <section class="fun" id="fun">
+        <div class="container">
+            <div class="glass-card section-card">
+                <h2 class="section-title">about and fun stuff</h2>
+                <p class="fun-description"> hover over each card to see more details!</p>
+                <div class="fun-grid">
+                    <div class="fun-item" data-key="about">
+                        <i class="fas fa-user"></i>
+                        <h3>about me</h3>
+                        <p>fun facts...</p>
+                    </div>
+                    <div class="fun-item" data-key="music">
+                        <i class="fas fa-music"></i>
+                        <h3>music</h3>
+                        <p>listening to...</p>
+                    </div>
+                    <div class="fun-item" data-key="interests">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Interests</h3>
+                        <p>goofy things here...</p>
+                    </div>
+                    <div class="fun-item" data-key="drinks">
+                        <i class="fas fa-coffee"></i>
+                        <h3>drinks</h3>
+                        <p>sipping on...</p>
+                    </div>
+                </div>
+                <!-- Hover detail panel (content populated by JS) -->
+                <div class="fun-detail glass-card" id="fun-detail" aria-live="polite">
+                    <div class="fun-artwork" id="fun-artwork" aria-hidden="true"></div>
+                    <div class="fun-detail-content">
+                        <h3 class="fun-detail-title" id="fun-detail-title">Details</h3>
+                        <p class="fun-detail-sub" id="fun-detail-sub">Hover a card to see more here.</p>
+                        <a class="fun-detail-link" id="fun-detail-link" href="#" target="_blank" rel="noopener">Open link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="glass-card section-card">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Research Assistant</h3>
+                            <h4>Brown University - Sandstede Lab</h4>
+                            <p class="timeline-date">Aug 2025 - Present</p>
+                            <div class="skill-badges">
+                                <span class="skill-badge">Mathematical Modeling</span>
+                                <span class="skill-badge">Python</span>
+                                <span class="skill-badge">Algorithm Optimization</span>
+                                <span class="skill-badge">Simulation</span>
+                                <span class="skill-badge">Research</span>
+                                <span class="skill-badge">Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Teaching Assistant</h3>
+                            <h4>Brown University — APMA 1360: Applied Dynamical Systems</h4>
+                            <p class="timeline-date">Jan 2026 - May 2026</p>
+                            <div class="skill-badges">
+                                <span class="skill-badge">Teaching</span>
+                                <span class="skill-badge">Mathematical Modeling</span>
+                                <span class="skill-badge">Bifurcation/Stability Analysis</span>
+                                <span class="skill-badge">Conservative/Dissipative Systems</span>
+                                <span class="skill-badge">Chaos Dynamics</span>
+                                <span class="skill-badge">Proofs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>STEM Resident Assistant</h3>
+                            <h4>Brown University Pre-College</h4>
+                            <p class="timeline-date">Summer 2025</p>
+                            <div class="skill-badges">
+                                <span class="skill-badge">Communication</span>
+                                <span class="skill-badge">Event Organization</span>
+                                <span class="skill-badge">Cryptography</span>
+                                <span class="skill-badge">Mentorship</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Intern</h3>
+                            <h4>Kollective Influence Inc.</h4>
+                            <p class="timeline-date">Jul 2023 - Oct 2023</p>
+                            <div class="skill-badges">
+                                <span class="skill-badge">Research</span>
+                                <span class="skill-badge">Communication</span>
+                                <span class="skill-badge">Data Organization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Co-Organizer</h3>
+                            <h4>Northview Hack Club</h4>
+                            <p class="timeline-date">Aug 2021 - May 2023</p>
+                            <div class="skill-badges">
+                                <span class="skill-badge">Teaching</span>
+                                <span class="skill-badge">Java</span>
+                                <span class="skill-badge">HTML/CSS</span>
+                                <span class="skill-badge">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Tutor</h3>
+                            <h4>Private Business</h4>
+                            <p class="timeline-date">Jul 2020 - Present</p>
+                            <div class="skill-badges">
+                                <span class="skill-badge">Mentorship</span>
+                                <span class="skill-badge">Programming</span>
+                                <span class="skill-badge">Math</span>
+                                <span class="skill-badge">Physics</span>
+                                <span class="skill-badge">Music</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="glass-card section-card">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Training Minecraft PvP Agent Using Modularized Reinforcement Learning</h3>
+                            <p>CSCI 1470: Deep Learning · Fall 2025</p>
+                            <p>A deep learning model trained using modularized Proximal Policy Optimization to mimic the behavior of a human player and create a Minecraft PvP Agent that exhibits human strategies.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Deep Learning</span>
+                                <span class="tech-tag">Tensorflow</span>
+                                <span class="tech-tag">Reinforcement Learning</span>
+                                <span class="tech-tag">Gym</span>
+                                <span class="tech-tag">Performance Optimization</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1CiJnnex6PbEBhlmTsVuksS0P9UfhQpbT/view?usp=sharing" aria-label="Poster" target="_blank"><i class="fas fa-file-alt"></i> Poster</a>
+                                <a href="https://drive.google.com/file/d/1eJm6xM7Fkaq-veNf9ZaF4V5-rB_IICTO/view?usp=sharing" aria-label="Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Synthetic Data Generation from Genetic Regulatory Networks</h3>
+                            <p>Sandstede Lab · Present</p>
+                            <p>Using mechanistic models to generate synthetic data based on genetic regulatory networks in order to test state-of-the-art inference algorithms.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Algorithm Testing</span>
+                                <span class="tech-tag">Mathematical Modeling</span>
+                                <span class="tech-tag">Data processing</span>
+                                <span class="tech-tag">Parameter Tuning</span>
+                            </div>
+                            <p>Please reach out if you are interested in my works in this project. I am very passionate about the project and would love to talk more!</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Snake</h3>
+                            <p>CSCI 0300: Computer Systems · Fall 2025</p>
+                            <p>Snake game built in C with custom board options.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Programming</span>
+                                <span class="tech-tag">C</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" aria-label="Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="#" aria-label="Repository" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second row templates -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Period Three Implies Chaos - Relation to Logistic System</h3>
+                            <p>APMA 1360: Dynamical Systems · Spring 2025</p>
+                            <p>Proving Li-Yorke's theorem for 1D discrete systems where period-three orbits imply chaos, applying conclusions of the findings to the logistic map and simulating results. Contact for full paper.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Proofs</span>
+                                <span class="tech-tag">Chaos Systems</span>
+                                <span class="tech-tag">Simulations</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">MATLAB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1VXPP6wPhB8nO5wzlUrWvg55YoxT1Ev4x/view?usp=sharing" aria-label="Paper"><i class="fas fa-file-alt"></i> Paper</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Hopfield Networks and Connection to Complex Dynamical Systems</h3>
+                            <p>APMA Directed Reading Program · Fall 2025</p>
+                            <p>Exploration of Hopfield Neural Network, its applications in associative memory and attention mechanisms, and possible chaotic behavior. Contact for more details.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Hopfield Neural Networks</span>
+                                <span class="tech-tag">Python Simulations</span>
+                                <span class="tech-tag">Chaos Systems</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/15tA8ZPVigndO7ozhRnde5RV1n5b7a-Ck/view?usp=sharing" aria-label="Poster"><i class="fas fa-file-alt"></i> Poster</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Exploring Vaccine Efficiency on Influenza Virus Outbreak</h3>
+                            <p>Georgia Institute of Technology · Spring 2024</p>
+                            <p>Adding parameters to the SIR outbreak model to visualize effects of vaccine efficiency in the 2017 Influenza Outbreak.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">MATLAB</span>
+                                <span class="tech-tag">ODE Visualization</span>
+                                <span class="tech-tag">Bifurcation Analysis</span>
+                                <span class="tech-tag">SIR Modeling</span>
+                                <span class="tech-tag">Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="glass-card section-card">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">MATLAB</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Stata</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">LaTeX</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Tools & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Numpy</span>
+                            <span class="skill-tag">Tensorflow</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Oracle</span>
+                            <span class="skill-tag">SQLServer</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i>Mathematical Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Modeling</span>
+                            <span class="skill-tag">Simulations</span>
+                            <span class="skill-tag">Numerical Optimization</span>
+                            <span class="skill-tag">Stochastic Models</span>
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Mathematical Programming</span>
+                            <span class="skill-tag">Model/Program Implementation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="glass-card contact-card">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:your.email@example.com">xiaojun_ge@brown.edu</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Mango-Jelly" target="_blank">github.com/Mango-Jelly</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/xiaojun-ge" target="_blank">https://www.linkedin.com/in/xiaojun-ge</a>
+                    </div>
+                </div>
+                <p class="credits">Made with lots of ☕ | © 2025</p>
+                <div class="credits-buttons">
+                    <button class="credit-btn" onclick="window.open('https://www.pexels.com/photo/lake-on-between-snowy-mountain-858115/', '_blank')">
+                        <i class="fas fa-images"></i> Background Photo Credits
+                    </button>
+                    <button class="credit-btn" onclick="window.open('https://pin.it/1LWQo55FN', '_blank')">
+                        <i class="fas fa-camera"></i> Icon Credits
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
