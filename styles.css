@@ -907,6 +907,33 @@ section {
         height: auto;
         min-height: 50px;
     }
+
+    /* Fix fun detail section for mobile */
+    .fun-detail {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .fun-detail.visible {
+        max-height: 500px;
+    }
+
+    .fun-artwork {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .fun-detail-content {
+        min-height: auto;
+        text-align: center;
+    }
+
+    .fun-detail-sub {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
 }
 
 @media (max-width: 480px) {
