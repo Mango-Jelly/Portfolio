@@ -3,413 +3,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xiaojun Ge's Portfolio</title>
+    <title>Xiaojun Ge — Applied Math · CS</title>
+    <meta name="description" content="Xiaojun (Jun) Ge — Applied Mathematics & Computer Science at Brown University. Systems, models & intelligent agents.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#home" class="logo">
-                <img src="images/logo.png" alt="Logo">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#fun">About</a></li>
-                <li><a href="#experience">Experiences</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="glass-card hero-card">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Jun</span></h1>
-                <h2 class="hero-description">a sophomore studying Applied Math & Computer Science @ Brown University </h2>
-                <div class="social-links">
-                    <a href="https://github.com/Mango-Jelly" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="#top" class="nav-name">Xiaojun Ge</a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact" class="nav-contact">Contact</a>
+            </nav>
+            <div class="nav-right">
+                <div class="nav-social">
+                    <a href="https://github.com/Mango-Jelly" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                            <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.98 3.23 9.2 7.7 10.7.56.1.77-.24.77-.54 0-.27-.01-1-.02-1.96-3.13.68-3.79-1.51-3.79-1.51-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.16a10.7 10.7 0 0 1 5.65 0c2.15-1.46 3.1-1.16 3.1-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.33-2.64 5.29-5.15 5.56.4.35.76 1.04.76 2.1 0 1.52-.01 2.75-.01 3.12 0 .3.2.65.78.54 4.46-1.5 7.69-5.72 7.69-10.7C23.25 5.48 18.27.5 12 .5Z"/>
+                        </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/xiaojun-ge" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#contact" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
+                    <a href="https://www.linkedin.com/in/xiaojun-ge" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
+                            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/>
+                        </svg>
                     </a>
                 </div>
-                <button id="snow-toggle" class="snow-toggle" aria-label="Toggle snow effect">
-                    <i class="fas fa-snowflake"></i>
+                <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
-            
-            <!-- Currently Taking Section -->
-            <div class="glass-card currently-taking">
-                <p class="taking-label">Currently Learning (Fall 2025):</p>
-                <div class="rotating-classes">
-                    <span class="class-item active">CSCI 1515: Applied Cryptography</span>
-                    <span class="class-item">CSCI 1680: Computer Networks</span>
-                    <span class="class-item">APMA 1160: Numerical Optimization</span>
-                    <span class="class-item">APMA 1070: Quantitative Models of Bio Systems</span>
-                    <span class="class-item">CSCI 1952D: Intelligent Robotics</span>
+        </div>
+    </header>
+
+
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="container">
+                <p class="hero-eyebrow">Xiaojun (Jun) Ge</p>
+                <h1 class="hero-title">I build systems, models<br>&amp; intelligent agents.</h1>
+                <p class="hero-sub">
+                    Applied Mathematics &amp; Computer Science at Brown University.
+                    Currently researching gene regulatory networks and building autonomous AI systems.
+                    Based in Providence, RI.
+                </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn">View work</a>
+                    <a href="#contact" class="btn btn-ghost">Get in touch</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Fun Section -->
-    <section class="fun" id="fun">
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">About</h2>
+                    <span class="section-count">Hello 👋</span>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I'm Jun — a student of Applied Mathematics and Computer Science at Brown University,
+                            drawn to the places where rigorous math meets real systems. I like taking hard problems
+                            apart, whether that's a consensus protocol, a network stack, or a mechanistic model of a cell.
+                        </p>
+                        <p>
+                            Outside of work, I'm a fan of deception tabletop games like Avalon and Secret Hitler,
+                            I play violin and piano, and I'll rarely say no to badminton or a caramel macchiato.
+                        </p>
+                    </div>
+                    <dl class="about-facts">
+                        <div>
+                            <dt>Currently building</dt>
+                            <dd>Autonomous AI agents &amp; distributed systems</dd>
+                        </div>
+                        <div>
+                            <dt>Currently learning</dt>
+                            <dd class="rotate" data-rotate='["Go, low-level networking &amp; consensus protocols","Distributed systems &amp; fault tolerance","Agentic AI &amp; autonomous decision-making","Applied cryptography &amp; secure protocols"]'>Go, low-level networking &amp; consensus protocols</dd>
+                        </div>
+                        <div>
+                            <dt>Off the clock</dt>
+                            <dd>Violin, piano &amp; a lot of badminton</dd>
+                        </div>
+                        <div>
+                            <dt>Ask me about</dt>
+                            <dd class="rotate" data-rotate='["Chaos theory &amp; why period three implies chaos","Training RL agents to win Minecraft PvP","Building a Raft consensus KV-store from scratch","Simulating single-cell data from gene networks"]'>Chaos theory &amp; why period three implies chaos</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="skills">
+                    <div class="skill-group">
+                        <h4>Languages</h4>
+                        <p>Python · C · C++ · Go · Java · MATLAB · Stata · SQL · HTML/CSS · LaTeX</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Frameworks &amp; Tools</h4>
+                        <p>TensorFlow · PyTorch · Scikit-learn · gRPC · OpenClaw · Docker · AWS · NumPy · Pandas · VMware · Git · Linux</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Concepts</h4>
+                        <p>Agentic AI · Concurrent Systems · Raft Consensus · Reinforcement Learning · Cryptography · Network Protocol Design · Numerical Optimization</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Work -->
+        <section class="section section-alt" id="work">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Selected Work</h2>
+                    <span class="section-count">2025 — 2026</span>
+                </div>
+
+                <ol class="work-list">
+                    <li class="work-item">
+                        <div class="work-meta">
+                            <span class="work-index">01</span>
+                            <span class="work-year">Summer 2026</span>
+                        </div>
+                        <div class="work-body">
+                            <h3 class="work-title">Distributed KV-Store with Raft Consensus</h3>
+                            <p class="work-desc">
+                                A fault-tolerant distributed key-value store built in Go from scratch, implementing
+                                the full Raft protocol — leader election, log replication, heartbeating and crash
+                                recovery — verified against a fault-injection harness across a 7-node cluster. Exposes
+                                a consistent GET/PUT/DELETE interface over gRPC with client-side leader redirection.
+                            </p>
+                            <ul class="work-tags">
+                                <li>Go</li>
+                                <li>Raft Consensus</li>
+                                <li>gRPC</li>
+                                <li>Docker Compose</li>
+                                <li>Prometheus</li>
+                                <li>Grafana</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <div class="work-meta">
+                            <span class="work-index">02</span>
+                            <span class="work-year">Spring 2026</span>
+                        </div>
+                        <div class="work-body">
+                            <h3 class="work-title">TCP/IP — Transport Layer Implementation</h3>
+                            <p class="work-desc">
+                                An end-to-end IP forwarding engine in Go with a from-scratch RIP routing protocol
+                                (longest-prefix match, split horizon, poison reverse) and a user-space TCP stack featuring
+                                the full handshake/teardown state machine, sliding-window flow control and retransmission —
+                                transmitting 2&nbsp;Mb in 0.2s. Extended into a functioning encrypted VPN tunnel.
+                            </p>
+                            <ul class="work-tags">
+                                <li>Go</li>
+                                <li>Network Protocols</li>
+                                <li>Concurrency</li>
+                                <li>Socket Programming</li>
+                                <li>Cryptography</li>
+                            </ul>
+                            <div class="work-links">
+                                <a href="#" target="_blank" rel="noopener">Demo →</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <div class="work-meta">
+                            <span class="work-index">03</span>
+                            <span class="work-year">Fall 2025</span>
+                        </div>
+                        <div class="work-body">
+                            <h3 class="work-title">Minecraft PvP Agent via Modular Reinforcement Learning</h3>
+                            <p class="work-desc">
+                                Three specialized PPO agents trained to master discrete PvP subtasks — attacking,
+                                movement and precision aiming — running on a high-performance Python simulation of the
+                                Minecraft engine. Skill distillation and behavioral cloning merged them into a final
+                                agent with a 95%+ win rate against deployed algorithmic bots.
+                            </p>
+                            <ul class="work-tags">
+                                <li>Python</li>
+                                <li>PPO</li>
+                                <li>TensorFlow</li>
+                                <li>Reinforcement Learning</li>
+                                <li>Behavioral Cloning</li>
+                            </ul>
+                            <div class="work-links">
+                                <a href="https://drive.google.com/file/d/1CiJnnex6PbEBhlmTsVuksS0P9UfhQpbT/view?usp=sharing" target="_blank" rel="noopener">Poster →</a>
+                                <a href="https://drive.google.com/file/d/1eJm6xM7Fkaq-veNf9ZaF4V5-rB_IICTO/view?usp=sharing" target="_blank" rel="noopener">Demo →</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <div class="work-meta">
+                            <span class="work-index">04</span>
+                            <span class="work-year">Ongoing</span>
+                        </div>
+                        <div class="work-body">
+                            <h3 class="work-title">Synthetic Data Generation from Gene Regulatory Networks</h3>
+                            <p class="work-desc">
+                                A modular Python simulator that takes a gene regulatory network as its sole input and
+                                generates synthetic multi-modal single-cell data — spliced/unspliced RNA, RNA velocity,
+                                protein abundance and chromatin accessibility — by integrating a mechanistic ODE system,
+                                then benchmarks six GRN inference algorithms on identical topologies.
+                            </p>
+                            <ul class="work-tags">
+                                <li>Python</li>
+                                <li>MATLAB</li>
+                                <li>ODE Modeling</li>
+                                <li>Optimal Transport</li>
+                                <li>Benchmarking</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <div class="work-meta">
+                            <span class="work-index">05</span>
+                            <span class="work-year">Spring 2025</span>
+                        </div>
+                        <div class="work-body">
+                            <h3 class="work-title">Period Three Implies Chaos</h3>
+                            <p class="work-desc">
+                                Proving the Li–Yorke theorem for 1D discrete systems — where period-three orbits imply
+                                chaos — then applying the result to the logistic map and simulating the emergent dynamics.
+                            </p>
+                            <ul class="work-tags">
+                                <li>Dynamical Systems</li>
+                                <li>Proofs</li>
+                                <li>Python</li>
+                                <li>MATLAB</li>
+                            </ul>
+                            <div class="work-links">
+                                <a href="https://drive.google.com/file/d/1VXPP6wPhB8nO5wzlUrWvg55YoxT1Ev4x/view?usp=sharing" target="_blank" rel="noopener">Paper →</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <div class="work-meta">
+                            <span class="work-index">06</span>
+                            <span class="work-year">Fall 2025</span>
+                        </div>
+                        <div class="work-body">
+                            <h3 class="work-title">Hopfield Networks &amp; Complex Dynamical Systems</h3>
+                            <p class="work-desc">
+                                An exploration of the Hopfield neural network — its role in associative memory and
+                                attention mechanisms, and the conditions under which it exhibits chaotic behavior.
+                            </p>
+                            <ul class="work-tags">
+                                <li>Hopfield Networks</li>
+                                <li>Chaos Theory</li>
+                                <li>Python</li>
+                            </ul>
+                            <div class="work-links">
+                                <a href="https://drive.google.com/file/d/15tA8ZPVigndO7ozhRnde5RV1n5b7a-Ck/view?usp=sharing" target="_blank" rel="noopener">Poster →</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Experience</h2>
+                    <span class="section-count">Selected roles</span>
+                </div>
+
+                <div class="exp-list">
+                    <article class="exp-item">
+                        <div class="exp-when">May 2026 —</div>
+                        <div class="exp-detail">
+                            <h3 class="exp-role">AI/ML Intern</h3>
+                            <p class="exp-org">Junyi Technologies · Remote</p>
+                            <p class="exp-desc">
+                                Architecting an autonomous AI trading agent with an agentic harness around OpenClaw,
+                                parsing ~10k earnings reports and call transcripts from S&amp;P companies to generate
+                                trade signals, with an end-to-end backtesting and evaluation framework validated against
+                                historical market data.
+                            </p>
+                            <ul class="work-tags">
+                                <li>Agentic AI</li>
+                                <li>OpenClaw</li>
+                                <li>Python</li>
+                                <li>Backtesting</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="exp-item">
+                        <div class="exp-when">Aug 2025 —</div>
+                        <div class="exp-detail">
+                            <h3 class="exp-role">Undergraduate Researcher</h3>
+                            <p class="exp-org">Brown University · Advanced Undergraduate Research Fellow</p>
+                            <p class="exp-desc">
+                                Designing a modular simulator that turns a gene regulatory network into synthetic
+                                multi-modal single-cell data via a mechanistic ODE system, with a stochastic noise model
+                                for biological variability, and an end-to-end pipeline benchmarking six GRN inference
+                                algorithms across 5k-cell, 177k-feature datasets.
+                            </p>
+                            <ul class="work-tags">
+                                <li>Python</li>
+                                <li>MATLAB</li>
+                                <li>Numerical Optimization</li>
+                                <li>Research</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="exp-item">
+                        <div class="exp-when">Jan — May 2026</div>
+                        <div class="exp-detail">
+                            <h3 class="exp-role">Teaching Assistant</h3>
+                            <p class="exp-org">Brown University · APMA 1360 Applied Dynamical Systems</p>
+                            <p class="exp-desc">
+                                Supporting students through bifurcation and stability analysis, conservative and
+                                dissipative systems, and chaotic dynamics — grading proofs and leading problem sessions.
+                            </p>
+                            <ul class="work-tags">
+                                <li>Teaching</li>
+                                <li>Dynamical Systems</li>
+                                <li>Proofs</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="exp-item">
+                        <div class="exp-when">Summer 2025</div>
+                        <div class="exp-detail">
+                            <h3 class="exp-role">STEM Resident Assistant</h3>
+                            <p class="exp-org">Brown University Pre-College</p>
+                            <p class="exp-desc">
+                                Mentored pre-college students, organized events and led sessions introducing
+                                foundational cryptography.
+                            </p>
+                            <ul class="work-tags">
+                                <li>Mentorship</li>
+                                <li>Cryptography</li>
+                                <li>Communication</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact / Footer -->
+    <footer class="footer" id="contact">
         <div class="container">
-            <div class="glass-card section-card">
-                <h2 class="section-title">about and fun stuff</h2>
-                <p class="fun-description"> hover over each card to see more details!</p>
-                <div class="fun-grid">
-                    <div class="fun-item" data-key="about">
-                        <i class="fas fa-user"></i>
-                        <h3>about me</h3>
-                        <p>fun facts...</p>
-                    </div>
-                    <div class="fun-item" data-key="music">
-                        <i class="fas fa-music"></i>
-                        <h3>music</h3>
-                        <p>listening to...</p>
-                    </div>
-                    <div class="fun-item" data-key="interests">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>Interests</h3>
-                        <p>goofy things here...</p>
-                    </div>
-                    <div class="fun-item" data-key="drinks">
-                        <i class="fas fa-coffee"></i>
-                        <h3>drinks</h3>
-                        <p>sipping on...</p>
-                    </div>
-                </div>
-                <!-- Hover detail panel (content populated by JS) -->
-                <div class="fun-detail glass-card" id="fun-detail" aria-live="polite">
-                    <div class="fun-artwork" id="fun-artwork" aria-hidden="true"></div>
-                    <div class="fun-detail-content">
-                        <h3 class="fun-detail-title" id="fun-detail-title">Details</h3>
-                        <p class="fun-detail-sub" id="fun-detail-sub">Hover a card to see more here.</p>
-                        <a class="fun-detail-link" id="fun-detail-link" href="#" target="_blank" rel="noopener">Open link</a>
-                    </div>
-                </div>
+            <p class="footer-eyebrow">Get in touch</p>
+            <h2 class="footer-title">Let's build something.</h2>
+            <a href="mailto:xiaojun_ge@brown.edu" class="footer-email">xiaojun_ge@brown.edu</a>
+            <div class="footer-links">
+                <a href="https://github.com/Mango-Jelly" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/xiaojun-ge" target="_blank" rel="noopener">LinkedIn</a>
             </div>
+            <p class="footer-credit">© 2026 Xiaojun Ge — designed &amp; built with care.</p>
         </div>
-    </section>
-
-    
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <div class="glass-card section-card">
-                <h2 class="section-title">Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Research Assistant</h3>
-                            <h4>Brown University - Sandstede Lab</h4>
-                            <p class="timeline-date">Aug 2025 - Present</p>
-                            <div class="skill-badges">
-                                <span class="skill-badge">Mathematical Modeling</span>
-                                <span class="skill-badge">Python</span>
-                                <span class="skill-badge">Algorithm Optimization</span>
-                                <span class="skill-badge">Simulation</span>
-                                <span class="skill-badge">Research</span>
-                                <span class="skill-badge">Data Analysis</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Teaching Assistant</h3>
-                            <h4>Brown University — APMA 1360: Applied Dynamical Systems</h4>
-                            <p class="timeline-date">Jan 2026 - May 2026</p>
-                            <div class="skill-badges">
-                                <span class="skill-badge">Teaching</span>
-                                <span class="skill-badge">Mathematical Modeling</span>
-                                <span class="skill-badge">Bifurcation/Stability Analysis</span>
-                                <span class="skill-badge">Conservative/Dissipative Systems</span>
-                                <span class="skill-badge">Chaos Dynamics</span>
-                                <span class="skill-badge">Proofs</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>STEM Resident Assistant</h3>
-                            <h4>Brown University Pre-College</h4>
-                            <p class="timeline-date">Summer 2025</p>
-                            <div class="skill-badges">
-                                <span class="skill-badge">Communication</span>
-                                <span class="skill-badge">Event Organization</span>
-                                <span class="skill-badge">Cryptography</span>
-                                <span class="skill-badge">Mentorship</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Intern</h3>
-                            <h4>Kollective Influence Inc.</h4>
-                            <p class="timeline-date">Jul 2023 - Oct 2023</p>
-                            <div class="skill-badges">
-                                <span class="skill-badge">Research</span>
-                                <span class="skill-badge">Communication</span>
-                                <span class="skill-badge">Data Organization</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Co-Organizer</h3>
-                            <h4>Northview Hack Club</h4>
-                            <p class="timeline-date">Aug 2021 - May 2023</p>
-                            <div class="skill-badges">
-                                <span class="skill-badge">Teaching</span>
-                                <span class="skill-badge">Java</span>
-                                <span class="skill-badge">HTML/CSS</span>
-                                <span class="skill-badge">JavaScript</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Tutor</h3>
-                            <h4>Private Business</h4>
-                            <p class="timeline-date">Jul 2020 - Present</p>
-                            <div class="skill-badges">
-                                <span class="skill-badge">Mentorship</span>
-                                <span class="skill-badge">Programming</span>
-                                <span class="skill-badge">Math</span>
-                                <span class="skill-badge">Physics</span>
-                                <span class="skill-badge">Music</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <div class="glass-card section-card">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Training Minecraft PvP Agent Using Modularized Reinforcement Learning</h3>
-                            <p>CSCI 1470: Deep Learning · Fall 2025</p>
-                            <p>A deep learning model trained using modularized Proximal Policy Optimization to mimic the behavior of a human player and create a Minecraft PvP Agent that exhibits human strategies.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Deep Learning</span>
-                                <span class="tech-tag">Tensorflow</span>
-                                <span class="tech-tag">Reinforcement Learning</span>
-                                <span class="tech-tag">Gym</span>
-                                <span class="tech-tag">Performance Optimization</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://drive.google.com/file/d/1CiJnnex6PbEBhlmTsVuksS0P9UfhQpbT/view?usp=sharing" aria-label="Poster" target="_blank"><i class="fas fa-file-alt"></i> Poster</a>
-                                <a href="https://drive.google.com/file/d/1eJm6xM7Fkaq-veNf9ZaF4V5-rB_IICTO/view?usp=sharing" aria-label="Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Synthetic Data Generation from Genetic Regulatory Networks</h3>
-                            <p>Sandstede Lab · Present</p>
-                            <p>Using mechanistic models to generate synthetic data based on genetic regulatory networks in order to test state-of-the-art inference algorithms.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Algorithm Testing</span>
-                                <span class="tech-tag">Mathematical Modeling</span>
-                                <span class="tech-tag">Data processing</span>
-                                <span class="tech-tag">Parameter Tuning</span>
-                            </div>
-                            <p>Please reach out if you are interested in my works in this project. I am very passionate about the project and would love to talk more!</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Snake</h3>
-                            <p>CSCI 0300: Computer Systems · Fall 2025</p>
-                            <p>Snake game built in C with custom board options.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Programming</span>
-                                <span class="tech-tag">C</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://drive.google.com/file/d/1mnoW9q83E8Ro2h0SKGtgtA338OmBvLyX/view?usp=sharing" aria-label="Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Second row templates -->
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Period Three Implies Chaos - Relation to Logistic System</h3>
-                            <p>APMA 1360: Dynamical Systems · Spring 2025</p>
-                            <p>Proving Li-Yorke's theorem for 1D discrete systems where period-three orbits imply chaos, applying conclusions of the findings to the logistic map and simulating results. Contact for full paper.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Proofs</span>
-                                <span class="tech-tag">Chaos Systems</span>
-                                <span class="tech-tag">Simulations</span>
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">MATLAB</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://drive.google.com/file/d/1VXPP6wPhB8nO5wzlUrWvg55YoxT1Ev4x/view?usp=sharing" aria-label="Paper"><i class="fas fa-file-alt"></i> Paper</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Hopfield Networks and Connection to Complex Dynamical Systems</h3>
-                            <p>APMA Directed Reading Program · Fall 2025</p>
-                            <p>Exploration of Hopfield Neural Network, its applications in associative memory and attention mechanisms, and possible chaotic behavior. Contact for more details.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Hopfield Neural Networks</span>
-                                <span class="tech-tag">Python Simulations</span>
-                                <span class="tech-tag">Chaos Systems</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://drive.google.com/file/d/15tA8ZPVigndO7ozhRnde5RV1n5b7a-Ck/view?usp=sharing" aria-label="Poster"><i class="fas fa-file-alt"></i> Poster</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Exploring Vaccine Efficiency on Influenza Virus Outbreak</h3>
-                            <p>Georgia Institute of Technology · Spring 2024</p>
-                            <p>Adding parameters to the SIR outbreak model to visualize effects of vaccine efficiency in the 2017 Influenza Outbreak.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">MATLAB</span>
-                                <span class="tech-tag">ODE Visualization</span>
-                                <span class="tech-tag">Bifurcation Analysis</span>
-                                <span class="tech-tag">SIR Modeling</span>
-                                <span class="tech-tag">Data Analysis</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <div class="glass-card section-card">
-                <h2 class="section-title">Skills & Technologies</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Languages</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">C/C++</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">MATLAB</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">Stata</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">LaTeX</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><i class="fas fa-laptop-code"></i> Tools & Frameworks</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">Numpy</span>
-                            <span class="skill-tag">Tensorflow</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">Linux</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Databases</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Oracle</span>
-                            <span class="skill-tag">SQLServer</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><i class="fas fa-tools"></i>Mathematical Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Modeling</span>
-                            <span class="skill-tag">Simulations</span>
-                            <span class="skill-tag">Numerical Optimization</span>
-                            <span class="skill-tag">Stochastic Models</span>
-                            <span class="skill-tag">Data Analysis</span>
-                            <span class="skill-tag">Mathematical Programming</span>
-                            <span class="skill-tag">Model/Program Implementation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="glass-card contact-card">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:xiaojun_ge@brown.edu">xiaojun_ge@brown.edu</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/Mango-Jelly" target="_blank">github.com/Mango-Jelly</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/xiaojun-ge" target="_blank">https://www.linkedin.com/in/xiaojun-ge</a>
-                    </div>
-                </div>
-                <p class="credits">Made with lots of ☕ | © 2026</p>
-                <div class="credits-buttons">
-                    <button class="credit-btn" onclick="window.open('https://www.pexels.com/photo/lake-on-between-snowy-mountain-858115/', '_blank')">
-                        <i class="fas fa-images"></i> Background Photo Credits
-                    </button>
-                    <button class="credit-btn" onclick="window.open('https://pin.it/1LWQo55FN', '_blank')">
-                        <i class="fas fa-camera"></i> Icon Credits
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+    </footer>
 
     <script src="script.js"></script>
 </body>
