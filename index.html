@@ -17,7 +17,7 @@
             <a href="#top" class="nav-name">Xiaojun Ge</a>
             <nav class="nav-links" aria-label="Primary">
                 <a href="#about">About</a>
-                <a href="#work">Work</a>
+                <a href="#work">Projects</a>
                 <a href="#experience">Experience</a>
                 <a href="#contact" class="nav-contact">Contact</a>
             </nav>
@@ -48,11 +48,11 @@
         <section class="hero" id="home">
             <div class="container">
                 <p class="hero-eyebrow">Xiaojun (Jun) Ge</p>
-                <h1 class="hero-title">I build systems, models<br>&amp; intelligent agents.</h1>
+                <h1 class="hero-title">Building systems, models<br>&amp; intelligent agents.</h1>
                 <p class="hero-sub">
                     Applied Mathematics &amp; Computer Science at Brown University.
-                    Currently researching gene regulatory networks and building autonomous AI systems.
-                    Based in Providence, RI.
+                    Currently researching gene regulatory networks and building agentic AI systems.<br><br>
+                    Based in Atlanta, GA &amp; Providence, RI.<br>
                 </p>
                 <div class="hero-actions">
                     <a href="#work" class="btn">View work</a>
@@ -66,37 +66,36 @@
             <div class="container">
                 <div class="section-head">
                     <h2 class="section-title">About</h2>
-                    <span class="section-count">Hello 👋</span>
+                    <span class="section-count">Hello! 👋</span>
                 </div>
 
                 <div class="about-grid">
                     <div class="about-text">
                         <p>
                             I'm Jun — a student of Applied Mathematics and Computer Science at Brown University,
-                            drawn to the places where rigorous math meets real systems. I like taking hard problems
-                            apart, whether that's a consensus protocol, a network stack, or a mechanistic model of a cell.
+                            interested in areas where math modeling meets algorithms and computer systems. I enjoy analyzing complex models/systems and reimplementing them to improve performance.
                         </p>
                         <p>
-                            Outside of work, I'm a fan of deception tabletop games like Avalon and Secret Hitler,
-                            I play violin and piano, and I'll rarely say no to badminton or a caramel macchiato.
+                            Outside of work, I'm a fan of deception tabletop games and strategy card games,
+                            I play violin and piano, and I am often café hopping and playing badminton.
                         </p>
                     </div>
                     <dl class="about-facts">
                         <div>
                             <dt>Currently building</dt>
-                            <dd>Autonomous AI agents &amp; distributed systems</dd>
+                            <dd>Autonomous AI agents, distributed systems, &amp; data simulators</dd>
                         </div>
                         <div>
                             <dt>Currently learning</dt>
-                            <dd class="rotate" data-rotate='["Go, low-level networking &amp; consensus protocols","Distributed systems &amp; fault tolerance","Agentic AI &amp; autonomous decision-making","Applied cryptography &amp; secure protocols"]'>Go, low-level networking &amp; consensus protocols</dd>
+                            <dd class="rotate" data-rotate='["Low-level systems in Go &amp; consensus protocols","Distributed systems &amp; fault tolerance algorithms","Agentic AI &amp; autonomous decision-making in stock trading","Gene regulatory networks prediction algorithms &amp; single-cell data simulation"]'>Low-level systems in Go &amp; consensus protocols</dd>
                         </div>
                         <div>
-                            <dt>Off the clock</dt>
-                            <dd>Violin, piano &amp; a lot of badminton</dd>
+                            <dt>Off the clock (recently)</dt>
+                            <dd>Watching soccer, gymming</dd>
                         </div>
                         <div>
                             <dt>Ask me about</dt>
-                            <dd class="rotate" data-rotate='["Chaos theory &amp; why period three implies chaos","Training RL agents to win Minecraft PvP","Building a Raft consensus KV-store from scratch","Simulating single-cell data from gene networks"]'>Chaos theory &amp; why period three implies chaos</dd>
+                            <dd class="rotate" data-rotate='["Gene Regulatory Networks","Deep Learning in single-cell RNA-seq","Training RL agents to win Minecraft PvP","Building a Raft consensus KV-store"]'>Training RL agents to win Minecraft PvP</dd>
                         </div>
                     </dl>
                 </div>
@@ -108,11 +107,11 @@
                     </div>
                     <div class="skill-group">
                         <h4>Frameworks &amp; Tools</h4>
-                        <p>TensorFlow · PyTorch · Scikit-learn · gRPC · OpenClaw · Docker · AWS · NumPy · Pandas · VMware · Git · Linux</p>
+                        <p>TensorFlow · PyTorch · Scikit-learn · gRPC · OpenClaw · Docker · AWS · NumPy · Pandas · Prometheus · Grafana ·VMware · Git · Bash · Protobuf · Linux</p>
                     </div>
                     <div class="skill-group">
                         <h4>Concepts</h4>
-                        <p>Agentic AI · Concurrent Systems · Raft Consensus · Reinforcement Learning · Cryptography · Network Protocol Design · Numerical Optimization</p>
+                        <p>Agentic AI · Concurrent/Distributed Systems · Fault Tolerant Algorithms · Deep Reinforcement Learning · Cryptographic Systems · Computer Networking · Algorithm Analysis </p>
                     </div>
                 </div>
             </div>
@@ -122,7 +121,7 @@
         <section class="section section-alt" id="work">
             <div class="container">
                 <div class="section-head">
-                    <h2 class="section-title">Selected Work</h2>
+                    <h2 class="section-title">Selected Works</h2>
                     <span class="section-count">2025 — 2026</span>
                 </div>
 
@@ -136,8 +135,8 @@
                             <h3 class="work-title">Distributed KV-Store with Raft Consensus</h3>
                             <p class="work-desc">
                                 A fault-tolerant distributed key-value store built in Go from scratch, implementing
-                                the full Raft protocol — leader election, log replication, heartbeating and crash
-                                recovery — verified against a fault-injection harness across a 7-node cluster. Exposes
+                                the full Raft protocol (leader election, log replication, heartbeating and crash
+                                recovery) verified against a fault-injection harness across a 7-node cluster. Exposes
                                 a consistent GET/PUT/DELETE interface over gRPC with client-side leader redirection.
                             </p>
                             <ul class="work-tags">
@@ -148,6 +147,9 @@
                                 <li>Prometheus</li>
                                 <li>Grafana</li>
                             </ul>
+                            <div class="work-links">
+                                <a href="#" target="_blank" rel="noopener">Demo Coming Soon!</a>
+                            </div>
                         </div>
                     </li>
 
@@ -172,7 +174,7 @@
                                 <li>Cryptography</li>
                             </ul>
                             <div class="work-links">
-                                <a href="#" target="_blank" rel="noopener">Demo →</a>
+                                <a href="https://drive.google.com/file/d/1hpYoHoEf39v0kiIuYBa0t4RLcOeWVI9l/view?usp=sharing" target="_blank" rel="noopener">Demo →</a>
                             </div>
                         </div>
                     </li>
@@ -185,8 +187,8 @@
                         <div class="work-body">
                             <h3 class="work-title">Minecraft PvP Agent via Modular Reinforcement Learning</h3>
                             <p class="work-desc">
-                                Three specialized PPO agents trained to master discrete PvP subtasks — attacking,
-                                movement and precision aiming — running on a high-performance Python simulation of the
+                                Three specialized PPO agents trained to master discrete PvP subtasks (attacking,
+                                movement and precision aiming) running on a high-performance Python simulation of the
                                 Minecraft engine. Skill distillation and behavioral cloning merged them into a final
                                 agent with a 95%+ win rate against deployed algorithmic bots.
                             </p>
@@ -213,8 +215,7 @@
                             <h3 class="work-title">Synthetic Data Generation from Gene Regulatory Networks</h3>
                             <p class="work-desc">
                                 A modular Python simulator that takes a gene regulatory network as its sole input and
-                                generates synthetic multi-modal single-cell data — spliced/unspliced RNA, RNA velocity,
-                                protein abundance and chromatin accessibility — by integrating a mechanistic ODE system,
+                                generates synthetic multi-modal single-cell data by integrating a mechanistic ODE system,
                                 then benchmarks six GRN inference algorithms on identical topologies.
                             </p>
                             <ul class="work-tags">
@@ -235,8 +236,8 @@
                         <div class="work-body">
                             <h3 class="work-title">Period Three Implies Chaos</h3>
                             <p class="work-desc">
-                                Proving the Li–Yorke theorem for 1D discrete systems — where period-three orbits imply
-                                chaos — then applying the result to the logistic map and simulating the emergent dynamics.
+                                Proving the Li–Yorke theorem for 1D discrete systems where period-three orbits imply
+                                chaos, then applying the result to the logistic map and simulating the emergent dynamics.
                             </p>
                             <ul class="work-tags">
                                 <li>Dynamical Systems</li>
@@ -258,7 +259,7 @@
                         <div class="work-body">
                             <h3 class="work-title">Hopfield Networks &amp; Complex Dynamical Systems</h3>
                             <p class="work-desc">
-                                An exploration of the Hopfield neural network — its role in associative memory and
+                                An exploration of the Hopfield neural network, its role in associative memory and
                                 attention mechanisms, and the conditions under which it exhibits chaotic behavior.
                             </p>
                             <ul class="work-tags">
@@ -325,17 +326,18 @@
                     </article>
 
                     <article class="exp-item">
-                        <div class="exp-when">Jan — May 2026</div>
+                        <div class="exp-when">Jan — May 2026<br> Sep — Dec 2026</div>
                         <div class="exp-detail">
                             <h3 class="exp-role">Teaching Assistant</h3>
-                            <p class="exp-org">Brown University · APMA 1360 Applied Dynamical Systems</p>
+                            <p class="exp-org">Brown University</p>
                             <p class="exp-desc">
-                                Supporting students through bifurcation and stability analysis, conservative and
-                                dissipative systems, and chaotic dynamics — grading proofs and leading problem sessions.
+                                Apma 1360: Applied Dynamical Systems<br>
+                                Apma 0355: Ordinary Differential Equations with Proofs
                             </p>
                             <ul class="work-tags">
                                 <li>Teaching</li>
                                 <li>Dynamical Systems</li>
+                                <li>ODE</li>
                                 <li>Proofs</li>
                             </ul>
                         </div>
@@ -366,13 +368,13 @@
     <footer class="footer" id="contact">
         <div class="container">
             <p class="footer-eyebrow">Get in touch</p>
-            <h2 class="footer-title">Let's build something.</h2>
+            <h2 class="footer-title">Let's Talk about Something!</h2>
             <a href="mailto:xiaojun_ge@brown.edu" class="footer-email">xiaojun_ge@brown.edu</a>
             <div class="footer-links">
                 <a href="https://github.com/Mango-Jelly" target="_blank" rel="noopener">GitHub</a>
                 <a href="https://www.linkedin.com/in/xiaojun-ge" target="_blank" rel="noopener">LinkedIn</a>
             </div>
-            <p class="footer-credit">© 2026 Xiaojun Ge — designed &amp; built with care.</p>
+            <p class="footer-credit">© 2026 Xiaojun Ge</p>
         </div>
     </footer>
 

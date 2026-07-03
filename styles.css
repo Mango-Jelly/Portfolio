@@ -173,23 +173,56 @@ a {
 }
 
 .nav-contact {
-    border: 1px solid var(--glass-border);
+    position: relative;
+    border: none;
     border-radius: 100px;
     padding: 0.45rem 1.1rem !important;
     background: var(--glass);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    color: var(--ink);
+    isolation: isolate;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 .nav-contact::after {
     display: none;
 }
 
+/* Flowing aurora border (inspired by the VS Code sharing indicator) */
+.nav-contact::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.3px;
+    background: linear-gradient(
+        115deg,
+        #7861ff, #3898ff, #ff6ab0, #40e0d0, #7861ff
+    );
+    background-size: 300% 300%;
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: aurora-border-flow 9s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
 .nav-contact:hover {
-    background: var(--ink);
-    color: #0b0d10;
-    border-color: var(--ink);
+    background: var(--glass-strong);
+}
+
+@keyframes aurora-border-flow {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 .nav-toggle {
@@ -275,7 +308,7 @@ a {
 }
 
 .hero-sub {
-    max-width: 46ch;
+    max-width: 50ch;
     font-size: clamp(1.05rem, 1.6vw, 1.25rem);
     color: var(--ink-soft);
     margin-bottom: 2.75rem;
@@ -719,6 +752,13 @@ a {
         transform: none;
         transition: none;
     }
+    .contact-card::before,
+    .contact-card::after {
+        animation: none;
+    }
+    .nav-contact::before {
+        animation: none;
+    }
 }
 
 /* ===== RESPONSIVE ===== */
@@ -760,7 +800,7 @@ a {
     }
 
     .nav-contact {
-        border: 1px solid var(--line) !important;
+        border: none;
         border-radius: 100px;
         margin-top: 1rem;
         text-align: center;
