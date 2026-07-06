@@ -22,6 +22,7 @@
     --max: 1120px;
     --pad: clamp(1.25rem, 5vw, 3rem);
     --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --display: 'Playfair Display', 'Fraunces', Georgia, serif;
     --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
@@ -291,6 +292,7 @@ a {
 }
 
 .hero-eyebrow {
+    font-family: var(--display);
     font-size: 0.85rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -299,8 +301,8 @@ a {
 }
 
 .hero-title {
-    font-family: var(--serif);
-    font-weight: 400;
+    font-family: var(--display);
+    font-weight: 500;
     font-size: clamp(2.6rem, 8vw, 6rem);
     line-height: 1.03;
     letter-spacing: -0.02em;
